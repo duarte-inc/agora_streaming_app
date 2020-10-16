@@ -147,8 +147,8 @@ class _CallPageState extends State<CallPage> {
         return Container(
             child: Column(
           children: <Widget>[
+            _expandedVideoRow([views[1]]),
             _expandedVideoRow([views[0]]),
-            _expandedVideoRow([views[1]])
           ],
         ));
       case 3:
@@ -290,9 +290,9 @@ class _CallPageState extends State<CallPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Agora Flutter QuickStart'),
-      ),
+      // appBar: AppBar(
+      //   title: Text('Agora Flutter QuickStart'),
+      // ),
       backgroundColor: Colors.black,
       body: Center(
         child: Stack(
